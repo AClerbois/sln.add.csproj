@@ -2,6 +2,13 @@
 
 # sln.add.csproj
 
+I recently took a lot of time to add .csproj projects into a solution. 
+
+This tool allows you to add all the csproj in the folder and subfolders of the solution in one command:
+
+```bash
+dotnet addcsproj
+```
 
 ## Build status 
 [![Build Status](https://dev.azure.com/aclerbois/aclerbois.sln.launcher/_apis/build/status/AClerbois.sln.add.csproj?branchName=master)](https://dev.azure.com/aclerbois/aclerbois.sln.launcher/_build/latest?definitionId=18&branchName=master)
@@ -35,7 +42,7 @@ In case you have more than one file with the extension sln in the folder, the pr
 
 In order to use this dotnet tools, you must have installed on your computer: 
 - [Visual Studio](https://visualstudio.microsoft.com/fr/)
-- [.NET Core SDK 2.1+](https://www.microsoft.com/net/download)
+- [.NET Core SDK 3.1+](https://www.microsoft.com/net/download)
 
 And finally, you must have the.sln extensions which have as default program Visual Studio. 
 
