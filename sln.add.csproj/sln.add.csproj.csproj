@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>  
+    <TargetFrameworks>netcoreapp3.1;net8.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-addcsproj</ToolCommandName>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Sln.AddCsproj</PackageId>
     <Authors>AClerbois</Authors>
@@ -20,6 +20,8 @@
  - Support only one solution file
       1.1.0 : 
  - Add interactive options (contribution by @worming004)
+      1.2.0
+ - Add support net8.0
     </PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
