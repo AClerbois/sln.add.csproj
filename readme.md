@@ -25,12 +25,14 @@ dotnet tool install --global Sln.AddCsproj --version 1.0.0
 ```
 
 ## How to use
-You are in command prompt, you want to add all csproj in the current sln file
+You are in command prompt, you want to add all csproj in the current solution file (.sln or .slnx)
 
 Command to use :
 ```shell
 dotnet addcsproj
 ```
+
+The tool automatically detects and works with both traditional `.sln` files and the new XML-based `.slnx` files.
 
 ## Requirements
 
@@ -38,7 +40,7 @@ In order to use this dotnet tools, you must have installed on your computer:
 - [Visual Studio](https://visualstudio.microsoft.com/fr/)
 - [.NET Core SDK 3.1+](https://www.microsoft.com/net/download)
 
-And finally, you must have the.sln extensions which have as default program Visual Studio. 
+And finally, you must have the .sln or .slnx extensions which have as default program Visual Studio. 
 
 ## Credit logo
 ![Designed by Dooder](/icon.jpg)
