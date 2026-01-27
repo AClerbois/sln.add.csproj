@@ -30,13 +30,17 @@ namespace sln.add.csproj
         }
 
         private static IEnumerable<string> SearchSolutionFiles()
-            => Directory.EnumerateFiles(Environment.CurrentDirectory, "*.sln", SearchOption.TopDirectoryOnly);
+        {
+            var slnFiles = Directory.EnumerateFiles(Environment.CurrentDirectory, "*.sln", SearchOption.TopDirectoryOnly);
+            var slnxFiles = Directory.EnumerateFiles(Environment.CurrentDirectory, "*.slnx", SearchOption.TopDirectoryOnly);
+            return slnFiles.Concat(slnxFiles);
+        }
 
         private bool IsValid(IEnumerable<string> solutionFiles)
         {
             if (!solutionFiles.Any())
             {
-                Console.Error.WriteLine("No solution file *.sln were found in the current directory.");
+                Console.Error.WriteLine("No solution file (*.sln or *.slnx) was found in the current directory.");
                 return false;
             }
 
